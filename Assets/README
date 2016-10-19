@@ -1,0 +1,42 @@
+Project: Steam VR Sandbox
+Client: IBM VR Research Lab
+Date: 10/17/2016
+
+Team Members
+---------------------------------
+Alidi, IBM VR Manager
+	Email: aldis.sipolins@gmail.com
+	Cell: 217-819-9581
+
+Jon Murray, Game Designer and Developer
+	Email: murrj555@newschool.edu
+	Cell: (917) 309-5766
+
+Mike, Level Designer
+	Email:
+	Cell:
+
+Project Links
+---------------------------------
+Project Git Link: 
+Devlog Link: https://docs.google.com/a/newschool.edu/document/d/1RL3UogP5vpzE5HloZ-WENkLMUwFZb4rxv8cDm9MwJ9Q/edit?usp=sharing
+Trello Link: https://trello.com/invite/b/l5Lvk8Ll/34230fd7456a468dbc72f0c3c1398afb/steam-vr-sandbox
+
+Project Tools
+---------------------------------
+Using Unity Version 5.4, HTC Vive and Steam.
+
+You also need a steam account and you have to down load and install the steam vr tools. This download option will appear when you have set up your HTC Vive and have logged on into your account.
+
+Installing Project
+---------------------------------
+	You must need these Unity Asset Store Plugins
+		VRTK: https://www.assetstore.unity3d.com/en/#!/content/64131
+		Steam VR Plugin: https://www.assetstore.unity3d.com/en/#!/content/32647
+		The Lab Renderer: https://www.assetstore.unity3d.com/en/#!/content/63141
+
+
+
+
+
+
