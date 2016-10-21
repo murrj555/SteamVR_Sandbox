@@ -13,7 +13,7 @@ public class VisibleRangeUI : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		float distance = (this.transform.position).magnitude;
+		float distance = (this.transform.position - Camera.main.transform.position).magnitude;
 		float alpha = visibleDistance - distance;
 
 		canvasGroup.alpha = Mathf.Clamp(alpha, 0, 1);
