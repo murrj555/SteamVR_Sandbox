@@ -773,7 +773,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1749916347}
-        m_MethodName: Replay_Stimuli_Keyboard_Mouse
+        m_MethodName: Start_Screen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

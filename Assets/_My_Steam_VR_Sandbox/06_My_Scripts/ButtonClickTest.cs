@@ -104,15 +104,18 @@ public class ButtonClickTest : MonoBehaviour {
     //submit subject number entry and load start screen
     //I have to have a script that records all the data starting from here. It has to record from scene to scene.
     //Aldi said that we already have a unity project package that does this somewhere. Its is probably in the Memsplosion unity project.
-    public void Enter_Subject_Number_Input(){
+    public void Start_Screen(){
 
-		Debug.Log("Submit Subject Number Entry and Load Start Screen!");
+        /*Add simple if statement here. "if clicked vr version and press submit, load VR Room scale level next"*/
+
+        Debug.Log("Submit Subject Number Entry and Load Start Screen!");
 		// Only specifying the sceneName or sceneBuildIndex will load the scene with the Single mode
 		//LoadSceneMode.Single = Delete Old Scene Load New Scene
 		//LoadSceneMode.Single = Load New Scene On Top of New Scene
-        SceneManager.LoadScene ("Start_Screen_JJM", LoadSceneMode.Single);
+        SceneManager.LoadScene ("Start_Screen_3D_Version_JJM", LoadSceneMode.Single);
 	}
 
+ 
 
 
 }

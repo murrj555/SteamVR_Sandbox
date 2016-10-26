@@ -900,7 +900,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1749916347}
-        m_MethodName: Next_Go_To_Tell_Me_How_To_Play_Game_Mouse_Keyboard
+        m_MethodName: Next_Go_To_Tutorial_Keyboard_Mouse_Level
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
