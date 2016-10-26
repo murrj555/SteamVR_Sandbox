@@ -16,8 +16,11 @@ public class Decay : MonoBehaviour {
 
     [Header("Edit Settings")] //you can use this to add your own header in your unity script component
     [Space(10)] //adds space between public variables, makes things easier to read.
-    //turn off scale
-    private bool scaleBool = true;
+
+    /// <summary>
+    /// Turn Fade off and one here.
+    /// </summary>
+    public bool isFading = true;
 
     [Header("Dont Mess With / For Testing")]//you can use this to add your own header in your unity script component
     [Space(10)] //adds space between public variables, makes things easier to read.
@@ -37,23 +40,18 @@ public class Decay : MonoBehaviour {
 	void Update () {
 
 
-
-        uiImage.color = new Color(uiImage.color.r,
-            uiImage.color.g,
-            uiImage.color.b,
-            (decaySeconds - elapsedSeconds) / decaySeconds);
-
-        if (scaleBool)
+        if (isFading)
             {
-                scale = 1 + (elapsedSeconds * scaleMultiplier);
-            }
-            else
-            {
-                scale = 0;
+                //fade
+                uiImage.color = new Color(uiImage.color.r,
+                uiImage.color.g,
+                uiImage.color.b,
+                (decaySeconds - elapsedSeconds) / decaySeconds);
             }
 
-        //scale = 1 + (elapsedSeconds * scaleMultiplier);
-
+  
+        scale = 1 + (elapsedSeconds * scaleMultiplier);
+          
         uiImage.gameObject.transform.localScale =
             new Vector3(scale, scale, scale);
 
