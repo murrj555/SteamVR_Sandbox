@@ -17,6 +17,11 @@ public class Decay : MonoBehaviour {
     [Header("Edit Settings")] //you can use this to add your own header in your unity script component
     [Space(10)] //adds space between public variables, makes things easier to read.
 
+    [Header("Fade To Input Screen")] //you can use this to add your own header in your unity script component
+    [Space(10)] //adds space between public variables, makes things easier to read.
+    public bool isSceneTransition;
+
+
     /// <summary>
     /// Turn Fade off and one here.
     /// </summary>
@@ -56,5 +61,12 @@ public class Decay : MonoBehaviour {
             new Vector3(scale, scale, scale);
 
         elapsedSeconds += Time.deltaTime;
-	}
+
+        if (isSceneTransition)
+        {
+            //load Input Screen
+        
+        }
+
+    }
 }

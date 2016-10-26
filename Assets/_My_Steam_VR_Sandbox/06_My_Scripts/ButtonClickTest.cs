@@ -84,7 +84,7 @@ public class ButtonClickTest : MonoBehaviour {
     public void Next_Go_To_Tutorial_Keyboard_Mouse_Level()
     {
         Debug.Log("Pressed Next on How to Play The Game Level got to Tell Me how to play the game!");
-        SceneManager.LoadScene("Tutorial_Keyboard_Mouse_JJM", LoadSceneMode.Single);
+        SceneManager.LoadScene("04_Tutorial_Keyboard_Mouse_JJM", LoadSceneMode.Single);
     }
 
     //pass trial
@@ -98,7 +98,7 @@ public class ButtonClickTest : MonoBehaviour {
     public void Next_Go_To_How_To_Play_Game_Mouse_Keyboard()
     {
         Debug.Log("Pressed Next on How to Play The Game Level!");
-        SceneManager.LoadScene("How_To_Play_The_Game_Keyboard_Mouse_JJM", LoadSceneMode.Single);
+        SceneManager.LoadScene("03_How_To_Play_The_Game_Keyboard_Mouse_JJM", LoadSceneMode.Single);
     }
 
     //submit subject number entry and load start screen
