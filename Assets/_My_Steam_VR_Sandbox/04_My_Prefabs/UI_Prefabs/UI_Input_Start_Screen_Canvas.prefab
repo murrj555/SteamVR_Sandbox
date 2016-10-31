@@ -635,6 +635,7 @@ MonoBehaviour:
   decaySeconds: 1
   uiImage: {fileID: 0}
   scaleMultiplier: 0
+  isSceneTransition: 0
   isFading: 1
   scale: 0
   elapsedSeconds: 0
@@ -887,6 +888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6481ddeeb0f4330459e8d72a54a94cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isVR: {fileID: 0}
 --- !u!114 &114000013346638204
 MonoBehaviour:
   m_ObjectHideFlags: 1

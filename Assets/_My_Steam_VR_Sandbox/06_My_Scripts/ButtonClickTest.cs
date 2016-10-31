@@ -6,10 +6,12 @@ using UnityEngine.UI; // for UI
 using UnityEngine.SceneManagement; // for loading scenes
 
 
-//
 public class ButtonClickTest : MonoBehaviour {
 
-	public void Click_Test(){
+    //toogle boolean
+    public Toggle isVR;
+
+    public void Click_Test(){
 
 		Debug.Log("Clicked Button! :)");
 	}
@@ -26,8 +28,15 @@ public class ButtonClickTest : MonoBehaviour {
 
 	}
 
-	//load the Game Lose Screen Level
-	public void Wrong_Awnser(){
+    public void Pause_Options()
+    {
+
+        Debug.Log("Pressed Options Button.");
+
+    }
+
+    //load the Game Lose Screen Level
+    public void Wrong_Awnser(){
 
 		Debug.Log("You Lose, Load Lose Screen");
 		// Only specifying the sceneName or sceneBuildIndex will load the scene with the Single mode
@@ -81,17 +90,38 @@ public class ButtonClickTest : MonoBehaviour {
     }
 
     //go to Tutorial Keyboard Mouse Level
-    public void Next_Go_To_Tutorial_Keyboard_Mouse_Level()
+    public void ActiveToggle()
     {
-        Debug.Log("Pressed Next on How to Play The Game Level got to Tell Me how to play the game!");
-        SceneManager.LoadScene("04_Tutorial_Keyboard_Mouse_JJM", LoadSceneMode.Single);
+        Debug.Log("Pressed Submit Button, Load Active Toggle");
+
+        if (isVR.isOn)
+        {
+            Debug.Log("Toggled is true!");
+
+            //when pressed submit button should change to load VR level not the 3D version
+            SceneManager.LoadScene("03_Start_Screen_VR_JJM", LoadSceneMode.Single);
+
+        }
+        else
+        {
+            Debug.Log("Toggled is false!");
+            SceneManager.LoadScene("03_How_To_Play_The_Game_Keyboard_Mouse_JJM", LoadSceneMode.Single);
+        }
+
+    }
+
+    //go to Tutorial Keyboard Mouse Level
+    public void OnSubmitButton()
+    {
+        ActiveToggle();
     }
 
     //pass trial
     public void Next_Go_To_Tell_Me_How_To_Play_Game_Mouse_Keyboard()
     {
+       
         Debug.Log("Pressed Next on How to Play The Game Level!");
-        SceneManager.LoadScene("Tell_How_To_Play_The_Game_Keyboard_Mouse_JJM", LoadSceneMode.Single);
+        
     }
 
     //pass trial
@@ -99,6 +129,7 @@ public class ButtonClickTest : MonoBehaviour {
     {
         Debug.Log("Pressed Next on How to Play The Game Level!");
         SceneManager.LoadScene("03_How_To_Play_The_Game_Keyboard_Mouse_JJM", LoadSceneMode.Single);
+
     }
 
     //submit subject number entry and load start screen
@@ -112,9 +143,8 @@ public class ButtonClickTest : MonoBehaviour {
 		// Only specifying the sceneName or sceneBuildIndex will load the scene with the Single mode
 		//LoadSceneMode.Single = Delete Old Scene Load New Scene
 		//LoadSceneMode.Single = Load New Scene On Top of New Scene
-        SceneManager.LoadScene ("Start_Screen_3D_Version_JJM", LoadSceneMode.Single);
+        SceneManager.LoadScene ("02_Input_Subject_Splash_Screen_JJM", LoadSceneMode.Single);
 	}
-
  
 
 

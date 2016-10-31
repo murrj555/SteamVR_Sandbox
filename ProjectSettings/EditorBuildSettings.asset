@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/_My_Steam_VR_Sandbox/05_My_Scenes/01_IBM_Splash_Screen_JJM.unity
   - enabled: 1
     path: Assets/_My_Steam_VR_Sandbox/05_My_Scenes/02_Input_Subject_Splash_Screen_JJM.unity
@@ -13,3 +13,9 @@ EditorBuildSettings:
     path: Assets/_My_Steam_VR_Sandbox/05_My_Scenes/Mental_Rotation_3D_Version/03_How_To_Play_The_Game_Keyboard_Mouse_JJM.unity
   - enabled: 1
     path: Assets/_My_Steam_VR_Sandbox/05_My_Scenes/Mental_Rotation_3D_Version/04_Tutorial_Keyboard_Mouse_JJM.unity
+  - enabled: 1
+    path: Assets/_My_Steam_VR_Sandbox/05_My_Scenes/Mental_Rotation_VR_Version/03_Start_Screen_VR_JJM.unity
+  - enabled: 1
+    path: Assets/_My_Steam_VR_Sandbox/05_My_Scenes/Mental_Rotation_VR_Version/04_VR_Room_Scale_Level_JJM.unity
+  - enabled: 1
+    path: Assets/_My_Steam_VR_Sandbox/05_My_Scenes/Mental_Rotation_VR_Version/05_Door_Interaction_Scene_JJM.unity
