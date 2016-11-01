@@ -34,7 +34,7 @@ public class Decay : MonoBehaviour {
 
     
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         //Get the Image component and attach it to this game object
         uiImage = GetComponent<Image>();
         //Destroy this game object, only after the decaySeconds variable.

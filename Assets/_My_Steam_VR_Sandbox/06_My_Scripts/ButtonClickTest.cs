@@ -11,13 +11,30 @@ public class ButtonClickTest : MonoBehaviour {
     //toogle boolean
     public Toggle isVR;
 
+    public InputField playerInputField;
+    public int count = 10;
+
     public void Click_Test(){
 
 		Debug.Log("Clicked Button! :)");
 	}
 
-	//load the Game Lose Screen Level
-	public void Correct_Awnser(){
+    //load the Game Lose Screen Level
+    public void Record_Player_Number()
+    {
+
+        Debug.Log("You Win, Load Win Screen");
+
+        // Only specifying the sceneName or sceneBuildIndex will load the scene with the Single mode
+        //LoadSceneMode.Single = Delete Old Scene Load New Scene
+        //LoadSceneMode.Single = Load New Scene On Top of New Scene
+        PersistentDataWriter.PDWriter.playerNumber = +1;
+
+
+    }
+
+    //load the Game Lose Screen Level
+    public void Correct_Awnser(){
 
 		Debug.Log("You Win, Load Win Screen");
 
@@ -101,11 +118,17 @@ public class ButtonClickTest : MonoBehaviour {
             //when pressed submit button should change to load VR level not the 3D version
             SceneManager.LoadScene("03_Start_Screen_VR_JJM", LoadSceneMode.Single);
 
+            //add VR Version String entry here, if true say VR Version, if not 3D Version
+            PersistentDataWriter.PDWriter.version = "VR Version!";
+
         }
         else
         {
             Debug.Log("Toggled is false!");
             SceneManager.LoadScene("03_How_To_Play_The_Game_Keyboard_Mouse_JJM", LoadSceneMode.Single);
+            
+            //if false print 3D Version to String
+            PersistentDataWriter.PDWriter.version = "3D Version!";
         }
 
     }
@@ -145,7 +168,13 @@ public class ButtonClickTest : MonoBehaviour {
 		//LoadSceneMode.Single = Load New Scene On Top of New Scene
         SceneManager.LoadScene ("02_Input_Subject_Splash_Screen_JJM", LoadSceneMode.Single);
 	}
- 
+
+    public void Input_Player()
+    {
+
+
+        playerInputField.text = "Enter Text Here..." + count.ToString();
+    }
 
 
 }

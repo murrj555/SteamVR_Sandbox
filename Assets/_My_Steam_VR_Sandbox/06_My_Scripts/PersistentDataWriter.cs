@@ -6,20 +6,58 @@ public class PersistentDataWriter : MonoBehaviour {
 
 	public static PersistentDataWriter PDWriter;
 
-	
-	public int playerNumber;
-	public bool isVRVersion;
-	//public float timer;
+    /// <summary>
+    /// This is where I will keep all data that I will be tracking.
+    /// </summary>
+    
+        // isFinishd boolean, Did the player win the game or lose?
+        private bool isFinished = false;
 
-	//Timer Variables
-	public Text timerText;
-	private float startTime;
-	private bool isFinished = false;
+        //Player Number, what player played this game?
+        public int playerNumber;
 
-	// Use this before initialization
-	// this script might be better with the UI Button Click Test. Also you should change the name
-	// of button click test script to UI Manager
-	void Awake () {
+        //VR Version Boolean, Did the player play the VR Version of the game or the 3D Version?
+	    public string version;
+
+        //Timer Variables, What time did this game start?
+        private float startTime;
+        
+        //Health Variable, What is my health?
+        public float health;
+
+        //Experience Variable, What is my experience?
+        public float experience;
+
+        //Level Variable, What level am I on?
+        public float level;
+
+
+    /// <summary>
+    /// This is where I will keep all of the text UI references
+    /// </summary>
+
+        //put all your public text references here to display all of the data that is changing and being updated dynamically.
+        public Text txtRefVersion;
+
+        // timer text reference
+        public Text timerText;
+
+        //  UI Text Reference for the Health Variable
+        public Text txtRefHealth;
+
+        //  UI Text Reference for the Experience Variable
+        public Text txtRefExperience;
+
+        //  UI Text Reference for the Level Variable
+        public Text txtRefLevel;
+
+
+
+
+    // Use this before initialization
+    // this script might be better with the UI Button Click Test. Also you should change the name
+    // of button click test script to UI Manager
+    void Awake () {
 
 
 		Debug.Log("On Awake PersistentDataWriter");
